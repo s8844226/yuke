@@ -86,16 +86,42 @@ section {
 }
 
 .flickr-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    text-align: center;
+    padding: 2rem 0;
 }
 
-.flickr-gallery img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+.flickr-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.2s;
+}
+
+.flickr-card:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.flickr-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.flickr-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #222;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    text-align: center;
 }
 
 /* 關於區塊 */
@@ -146,5 +172,20 @@ footer {
 
     nav ul li {
         margin: 0 1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .flickr-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .flickr-gallery {
+        grid-template-columns: 1fr;
+    }
+    .flickr-card img {
+        height: 180px;
     }
 } 
