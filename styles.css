@@ -130,6 +130,58 @@ section {
     text-align: center;
 }
 
+/* 關於我卡片設計 */
+.about-card {
+    max-width: 700px;
+    margin: 2rem auto 0 auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    display: flex;
+    align-items: center;
+    padding: 2.5rem 2rem;
+    gap: 2rem;
+    text-align: left;
+}
+
+.about-avatar {
+    flex-shrink: 0;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #dbe3ec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.about-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.about-content h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.about-content p {
+    font-size: 1.08rem;
+    color: #444;
+    margin-bottom: 0.7rem;
+}
+
+.about-desc {
+    color: #888;
+    font-size: 0.98rem;
+}
+
 /* 聯絡區塊 */
 .contact {
     text-align: center;
@@ -187,5 +239,18 @@ footer {
     }
     .flickr-card img {
         height: 180px;
+    }
+}
+
+@media (max-width: 700px) {
+    .about-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1rem;
+        gap: 1.2rem;
+    }
+    .about-avatar {
+        width: 110px;
+        height: 110px;
     }
 } 
