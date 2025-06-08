@@ -65,7 +65,7 @@ section {
 
 /* 首頁區塊 */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('51852024648_9f9f7128d8_o.jpg') center center/cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('51852024648_9f9f7128d8_o.jpg') center 30%/cover no-repeat;
     text-align: center;
     padding: 6rem 2rem;
     color: #fff;
