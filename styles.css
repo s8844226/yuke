@@ -31,8 +31,16 @@ nav {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.logo-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 0.5rem;
 }
 
 nav ul {
