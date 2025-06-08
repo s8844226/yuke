@@ -65,14 +65,26 @@ section {
 
 /* 首頁區塊 */
 .hero {
-    background-color: #f8f9fa;
+    background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('51852024648_9f9f7128d8_o.jpg') center center/cover no-repeat;
     text-align: center;
     padding: 6rem 2rem;
+    color: #fff;
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.18);
 }
 
 /* 作品集區塊 */
